@@ -242,11 +242,13 @@
       <p>Please add everyone who'd like to come as a separate guest in the RSVP, and we'll confirm.
          <span class="tbc">Confirm who's invited, including kids.</span> The resort has a kids' club.</p></details>
     <details><summary>Gifts?</summary>
-      <p><span class="tbc">Your presence is the present. Truly, no gifts please.</span></p></details>
+      <p>Your being there is the real gift. We already have the toaster; what we don't have is a honeymoon.
+         If you'd like to give something, a contribution to our honeymoon fund would make us very happy.
+         <span class="tbc">How to contribute: details to follow.</span></p></details>
     <details><summary>I need to change my reply</summary>
       <p>Just submit the form again with the same email address and your new answers will replace the old ones.</p></details>
     <details><summary>Questions?</summary>
-      <p>Reach out to us any time at <span class="tbc">[email / WhatsApp]</span>.</p></details>
+      <p>Reach out to us any time at <a href="https://wa.me/6593297999" target="_blank" rel="noopener">WhatsApp +65 9329 7999</a>.</p></details>
   </section>
 
   <section id="rsvp">
@@ -254,7 +256,7 @@
     <p>One form per household is fine. Add each person coming (or not coming) as their own guest.
        Please reply by <span class="tbc">[RSVP date]</span>.</p>
 
-    <noscript><p class="errors show">This form needs JavaScript. Please message us instead: <span class="tbc">[email / WhatsApp]</span>.</p></noscript>
+    <noscript><p class="errors show">This form needs JavaScript. Please message us instead: <a href="https://wa.me/6593297999" target="_blank" rel="noopener">WhatsApp +65 9329 7999</a>.</p></noscript>
 
     <form id="rsvp-form" novalidate autocomplete="on">
       <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
@@ -518,7 +520,8 @@
       .catch(function (err) {
         console.error(err);
         showErrors(['Sorry, that didn\'t go through. Please try again in a moment, or message us directly. ' +
-                    'Your answers are still here.']);
+                    'Your answers are still here.',
+                    '<span style="font-size:13px;opacity:.85">Technical detail: ' + esc(err && err.message || err) + '</span>']);
       })
       .then(function () { submitBtn.disabled = false; submitBtn.textContent = oldLabel; });
   });
