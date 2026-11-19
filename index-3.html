@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Celebrate with us · 24 – 26 September 2027</title>
+<meta name="description" content="Join Vincent &amp; Sebastian to celebrate, Koh Samui, 24 – 26 September 2027.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Fira+Sans:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fbf8f1; --ink:#222; --soft:#6b6b6b; --line:#e2dccd; --card:#fffdf8;
+    --accent:#7f6bb8; --err:#b3261e; --ok:#2f7d4f;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+       font-family:'Cardo',Georgia,'Times New Roman',serif;font-size:18px;line-height:1.55}
+  .wrap{max-width:660px;margin:0 auto;padding:0 20px}
+  .sans{font-family:'Fira Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-weight:300}
+  .kicker{font-family:'Fira Sans',system-ui,sans-serif;font-weight:300;font-size:12px;letter-spacing:.22em;
+          text-transform:uppercase;color:var(--soft);text-align:center;margin:0}
+  h1,h2,h3{font-weight:700;line-height:1.2;margin:0}
+  h1{font-size:clamp(28px,7vw,40px);text-align:center;margin:.35em 0 .1em}
+  h2{font-size:26px;margin-bottom:.5em}
+  h3{font-size:19px;margin:1.3em 0 .2em}
+  p{margin:.5em 0}
+  a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+
+  /* hero */
+  .hero{padding:28px 0 8px;text-align:center}
+  .hero svg{display:block;width:100%;max-width:560px;height:auto;margin:0 auto 14px}
+  .rule{width:44px;height:1px;background:#bdb5a3;margin:16px auto;border:0}
+  .venue{font-size:23px;text-align:center;margin:.2em 0 0}
+  .place{font-family:'Fira Sans',system-ui,sans-serif;font-weight:300;font-size:12px;letter-spacing:.2em;
+         text-transform:uppercase;color:var(--soft);text-align:center;margin:.3em 0 0}
+  .dress{font-style:italic;text-align:center;margin:1.2em 0 0}
+  .cta{display:inline-block;margin:22px auto 6px;padding:13px 30px;background:var(--ink);color:var(--paper);
+       border-radius:999px;text-decoration:none;font-family:'Fira Sans',system-ui,sans-serif;font-weight:400;
+       font-size:15px;letter-spacing:.06em}
+  .cta:hover,.cta:focus-visible{background:#000}
+  .deadline{font-style:italic;color:var(--soft);font-size:16px;text-align:center;margin:.2em 0 0}
+
+  nav{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:26px 0 0;background:var(--paper)}
+  nav ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 22px;margin:0;padding:12px 0}
+  nav a{font-family:'Fira Sans',system-ui,sans-serif;font-weight:300;font-size:13px;letter-spacing:.14em;
+        text-transform:uppercase;text-decoration:none;color:var(--soft)}
+  nav a:hover{color:var(--ink)}
+
+  section{padding:42px 0 6px}
+  .day{display:grid;grid-template-columns:92px 1fr;gap:4px 16px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .day:last-child{border-bottom:0}
+  .day .when{font-weight:700}
+  .day .when small{display:block;font-family:'Fira Sans',system-ui,sans-serif;font-weight:300;font-size:12px;
+                   letter-spacing:.1em;text-transform:uppercase;color:var(--soft)}
+  .day p{margin:0}
+  .day.main .what{font-weight:700}
+  .note{color:var(--soft);font-size:16px}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:16px 0}
+  .panel h3{margin-top:0}
+  details{border-bottom:1px solid var(--line);padding:12px 0}
+  summary{cursor:pointer;font-weight:700;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:'+';float:right;font-weight:400;color:var(--soft)}
+  details[open] summary::after{content:'–'}
+  details p{margin:.5em 0 0}
+
+  /* things still to confirm: delete the .tbc class (or this rule) once final */
+  .tbc{background:#fff1a8;border-radius:3px;padding:0 .22em}
+
+  /* audience switch: ?g=covered shows the accommodation text */
+  [data-group="standard"] .covered-only{display:none !important}
+  [data-group="covered"] .standard-only{display:none !important}
+
+  /* form */
+  form{margin-top:10px}
+  label,.lab{display:block;font-family:'Fira Sans',system-ui,sans-serif;font-weight:400;font-size:14px;
+             margin:14px 0 4px}
+  .hint{font-weight:300;color:var(--soft);font-size:13px}
+  input[type=text],input[type=email],input[type=tel],input[type=date],select,textarea{
+    width:100%;font:inherit;font-family:'Fira Sans',system-ui,sans-serif;font-weight:300;font-size:16px;
+    padding:11px 12px;border:1px solid #cfc7b5;border-radius:10px;background:#fff;color:var(--ink)}
+  textarea{min-height:84px;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible,.cta:focus-visible,summary:focus-visible{
+    outline:3px solid #c9bfe8;outline-offset:2px;border-color:var(--accent)}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+  @media (max-width:520px){.row2{grid-template-columns:1fr}.day{grid-template-columns:1fr}}
+  fieldset{border:0;margin:0;padding:0;min-width:0}
+  .person{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 18px 18px;margin:18px 0;position:relative}
+  .person legend{font-weight:700;padding:0 6px;margin-left:-6px}
+  .remove{position:absolute;top:10px;right:12px;background:none;border:0;color:var(--soft);cursor:pointer;
+          font-family:'Fira Sans',system-ui,sans-serif;font-weight:300;font-size:13px;text-decoration:underline}
+  .seg{display:flex;gap:10px;flex-wrap:wrap}
+  .seg label{margin:0;display:flex;align-items:center;gap:8px;font-weight:300;font-size:15px;cursor:pointer;
+             padding:10px 16px;border:1px solid #cfc7b5;border-radius:999px;background:#fff}
+  .seg input{margin:0;accent-color:var(--ink)}
+  .seg label:has(input:checked){border-color:var(--ink);background:var(--ink);color:#fff}
+  .seg label:has(input:focus-visible){outline:3px solid #c9bfe8;outline-offset:2px}
+  .checks{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:4px}
+  .checks label{display:flex;align-items:center;gap:8px;margin:0;font-weight:300;font-size:15px;cursor:pointer}
+  .checks input{accent-color:var(--ink);width:18px;height:18px}
+  .link-btn{background:none;border:0;padding:0;font:inherit;font-family:'Fira Sans',system-ui,sans-serif;font-weight:400;
+            font-size:14px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--accent);
+            text-underline-offset:3px;cursor:pointer}
+  .add{display:block;width:100%;padding:13px;border:1.5px dashed #bdb5a3;border-radius:14px;background:transparent;
+       font-family:'Fira Sans',system-ui,sans-serif;font-weight:400;font-size:15px;cursor:pointer;margin:6px 0 4px}
+  .add:hover{border-color:var(--ink)}
+  .submit{display:block;width:100%;margin:22px 0 8px;padding:15px;border:0;border-radius:999px;background:var(--ink);
+          color:var(--paper);font-family:'Fira Sans',system-ui,sans-serif;font-weight:400;font-size:16px;
+          letter-spacing:.06em;cursor:pointer}
+  .submit[disabled]{opacity:.55;cursor:progress}
+  .errors{display:none;border:1px solid #e4b4b0;background:#fdf1f0;color:var(--err);border-radius:12px;
+          padding:12px 16px;margin:16px 0;font-family:'Fira Sans',system-ui,sans-serif;font-weight:400;font-size:15px}
+  .errors.show{display:block}
+  .errors ul{margin:.3em 0 0;padding-left:1.1em}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+  .hidden{display:none !important}
+  .thanks{text-align:center;padding:26px 8px}
+  .thanks h3{font-size:24px;margin:.2em 0}
+  .demo{display:inline-block;margin-top:10px;font-family:'Fira Sans',system-ui,sans-serif;font-size:12px;
+        letter-spacing:.1em;text-transform:uppercase;color:var(--soft)}
+  footer{text-align:center;color:var(--soft);font-size:16px;padding:50px 0 60px}
+  footer .heart{color:#d9534f}
+</style>
+</head>
+<body data-group="standard">
+
+<header class="hero wrap">
+  <svg viewBox="0 0 148 68" role="img" aria-label="Two stick figures holding hands under a rainbow">
+    <g fill="none" stroke-linecap="butt">
+      <path d="M11.8 66 A62.2 62.2 0 0 1 136.2 66" stroke="#d9534f" stroke-width="3.78"/>
+      <path d="M16.2 66 A57.8 57.8 0 0 1 131.8 66" stroke="#e8844a" stroke-width="3.78"/>
+      <path d="M20.6 66 A53.4 53.4 0 0 1 127.4 66" stroke="#e9c24f" stroke-width="3.78"/>
+      <path d="M25 66 A49 49 0 0 1 123 66" stroke="#6fae80" stroke-width="3.78"/>
+      <path d="M29.4 66 A44.6 44.6 0 0 1 118.6 66" stroke="#4f8cc4" stroke-width="3.78"/>
+      <path d="M33.8 66 A40.2 40.2 0 0 1 114.2 66" stroke="#7f6bb8" stroke-width="3.78"/>
+    </g>
+    <line x1="38" y1="66" x2="110" y2="66" stroke="#d8d2c4" stroke-width="0.3"/>
+    <g fill="none" stroke="#222" stroke-width="2.82" stroke-linecap="round" stroke-linejoin="round">
+      <!-- left figure -->
+      <path d="M58 64.8 L63 52 L68 64.8 M63 52 L63 41.5 M56.5 50.5 L63 44 L74 49"/>
+      <circle cx="63" cy="36.5" r="4.4" fill="#fbf8f1"/>
+      <!-- right figure -->
+      <path d="M80 64.8 L85 52 L90 64.8 M85 52 L85 41.5 M91.5 50.5 L85 44 L74 49"/>
+      <circle cx="85" cy="36.5" r="4.4" fill="#fbf8f1"/>
+    </g>
+  </svg>
+
+  <p class="kicker">Join Vincent &amp; Sebastian to celebrate</p>
+  <h1>24 – 26 September 2027</h1>
+  <hr class="rule">
+  <p class="venue">Anantara Lawana</p>
+  <p class="place">Koh Samui, Thailand</p>
+  <p class="dress">Dress code: white <span class="sans" style="font-style:normal">·</span> the rainbow is already taken</p>
+  <a class="cta" href="#rsvp">RSVP</a>
+  <p class="deadline">Please reply by <span class="tbc">[RSVP date]</span></p>
+</header>
+
+<nav aria-label="Sections">
+  <ul class="wrap">
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#travel">Getting there</a></li>
+    <li><a href="#stay">Stay</a></li>
+    <li><a href="#faq">Good to know</a></li>
+    <li><a href="#rsvp">RSVP</a></li>
+  </ul>
+</nav>
+
+<main class="wrap">
+
+  <section id="schedule">
+    <h2>The weekend</h2>
+    <p class="note">Draft plan. Times to follow, so just keep the whole weekend free.</p>
+    <div class="day">
+      <div class="when">Friday<small>24 September</small></div>
+      <div><p class="what"><span class="tbc">Arrivals &amp; welcome drinks</span></p>
+           <p class="note">Settle in and say hello. Evening, relaxed, shoes optional.</p></div>
+    </div>
+    <div class="day main">
+      <div class="when">Saturday<small>25 September</small></div>
+      <div><p class="what">Celebration dinner</p>
+           <p class="note">The main event, in white. <span class="tbc">Time and place to follow.</span></p></div>
+    </div>
+    <div class="day">
+      <div class="when">Sunday<small>26 September</small></div>
+      <div><p class="what"><span class="tbc">Farewell brunch</span></p>
+           <p class="note">Slow morning, then check-out (noon).</p></div>
+    </div>
+  </section>
+
+  <section id="travel">
+    <h2>Getting there</h2>
+    <div class="panel">
+      <h3>The venue</h3>
+      <p><strong>Anantara Lawana Koh Samui Resort</strong><br>
+         92/1 Moo 2, Bophut, Koh Samui, Surat Thani 84320, Thailand<br>
+         <a href="https://www.google.com/maps/search/?api=1&amp;query=Anantara+Lawana+Koh+Samui+Resort" target="_blank" rel="noopener">Open in Maps</a></p>
+      <p class="note">On the northern, quieter end of Chaweng Beach, only a few minutes' drive from the airport.</p>
+    </div>
+    <h3>By air</h3>
+    <p>Fly into <strong>Samui Airport (USM)</strong>, about 5 to 10 minutes from the resort. Most routes from Europe
+       connect through Bangkok or Singapore, so plan for at least one stop.</p>
+    <p>The resort can arrange airport transfers for a fee. <span class="tbc">We'll share group transfer details closer to the date.</span></p>
+    <h3>Entry to Thailand</h3>
+    <p>As of 15 September 2026, passports from Germany, Austria, the UK and Singapore can enter Thailand without a visa
+       for tourism for up to 30 days. Your passport should be valid for at least six months. Thailand may also ask for
+       an online digital arrival card before you land. Rules change, so please check the
+       <a href="https://www.mfa.go.th/en" target="_blank" rel="noopener">Thai Ministry of Foreign Affairs</a> or your
+       own government's travel advice for your passport.</p>
+  </section>
+
+  <section id="stay">
+    <h2>Where to stay</h2>
+    <div class="covered-only">
+      <div class="panel">
+        <h3>Your room is on us</h3>
+        <p>We're taking care of your accommodation at Anantara Lawana. Flights are on you.</p>
+        <p>Tell us your arrival and departure dates in the RSVP below and we'll book your room. Please don't book the
+           resort yourself. Check-in is from 15:00 and check-out is by 12:00.</p>
+        <p class="note">Want to arrive early or stay longer? Just tell us in the form and we'll see what we can do.
+           <span class="tbc">Extra nights at your own cost?</span></p>
+      </div>
+    </div>
+    <div class="standard-only">
+      <p>The celebration is at the resort, and we'd love you to stay there too.
+         <span class="tbc">Group rate and booking details to follow.</span> Prefer to stay nearby? Chaweng Beach has plenty
+         of options within a short drive.</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Good to know</h2>
+    <details><summary>What should I wear?</summary>
+      <p>White, please, as light as you like. It's warm and humid in late September with the odd shower, so think
+         linen and cotton. A spare outfit is a good idea.</p></details>
+    <details><summary>What's the weather like?</summary>
+      <p>Around 29°C and humid, with showers likely, so bring something for the rain. The sea is warm, and the resort has
+         a beachfront infinity pool.</p></details>
+    <details><summary>Can I bring my partner or children?</summary>
+      <p>Please add everyone who'd like to come as a separate guest in the RSVP, and we'll confirm.
+         <span class="tbc">Confirm who's invited, including kids.</span> The resort has a kids' club.</p></details>
+    <details><summary>Gifts?</summary>
+      <p><span class="tbc">Your presence is the present. Truly, no gifts please.</span></p></details>
+    <details><summary>I need to change my reply</summary>
+      <p>Just submit the form again with the same email address and your new answers will replace the old ones.</p></details>
+    <details><summary>Questions?</summary>
+      <p>Reach out to us any time at <span class="tbc">[email / WhatsApp]</span>.</p></details>
+  </section>
+
+  <section id="rsvp">
+    <h2>RSVP</h2>
+    <p>One form per household is fine. Add each person coming (or not coming) as their own guest.
+       Please reply by <span class="tbc">[RSVP date]</span>.</p>
+
+    <noscript><p class="errors show">This form needs JavaScript. Please message us instead: <span class="tbc">[email / WhatsApp]</span>.</p></noscript>
+
+    <form id="rsvp-form" novalidate autocomplete="on">
+      <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+      <div class="row2">
+        <div><label for="contactName">Your name</label>
+             <input type="text" id="contactName" name="contactName" autocomplete="name" required></div>
+        <div><label for="email">Email</label>
+             <input type="email" id="email" name="email" autocomplete="email" required></div>
+      </div>
+      <label for="phone">WhatsApp / phone <span class="hint">(optional, only for travel updates)</span></label>
+      <input type="tel" id="phone" name="phone" autocomplete="tel">
+
+      <h3>Who's coming?</h3>
+      <div id="people"></div>
+      <button type="button" class="add" id="add-person">+ Add another person</button>
+
+      <div class="covered-only">
+        <h3>Your travel &amp; room</h3>
+        <p class="note">So we can book your stay. Dates can be different for individual guests below.</p>
+        <div class="row2">
+          <div><label for="arrival">Arrival date</label><input type="date" id="arrival" name="arrival" min="2027-09-10" max="2027-10-10"></div>
+          <div><label for="departure">Departure date</label><input type="date" id="departure" name="departure" min="2027-09-10" max="2027-10-15"></div>
+        </div>
+        <label for="flight">Flight or arrival details <span class="hint">(optional)</span></label>
+        <input type="text" id="flight" name="flight" placeholder="e.g. Arriving Bangkok 23 Sep, then Samui">
+        <label for="rooms">Room preferences <span class="hint">(who shares, bed type, accessibility)</span></label>
+        <textarea id="rooms" name="rooms"></textarea>
+      </div>
+
+      <label for="message">Anything else we should know? <span class="hint">(optional)</span></label>
+      <textarea id="message" name="message"></textarea>
+
+      <div class="errors" id="errors" role="alert" aria-live="assertive" tabindex="-1"></div>
+      <button type="submit" class="submit" id="submit">Send RSVP</button>
+      <p class="note" style="text-align:center;font-size:14px">We only use your answers to plan the weekend. They're seen by Vincent and Sebastian only.</p>
+    </form>
+
+    <div id="thanks" class="thanks hidden" role="status" tabindex="-1"></div>
+  </section>
+</main>
+
+<footer>
+  <p>With love, Vincent &amp; Sebastian <span class="heart" aria-hidden="true">♥</span></p>
+</footer>
+
+<template id="person-tpl">
+  <fieldset class="person">
+    <legend>Guest <span class="num"></span></legend>
+    <button type="button" class="remove">Remove</button>
+    <label>Full name <input type="text" class="p-name" autocomplete="off"></label>
+    <div class="lab">Will they be there?</div>
+    <div class="seg">
+      <label><input type="radio" class="p-yes" value="Yes"> Joyfully yes</label>
+      <label><input type="radio" class="p-no" value="No"> Sadly no</label>
+    </div>
+    <div class="if-yes hidden">
+      <label>Adult or child? <select class="p-age">
+        <option value="Adult">Adult</option>
+        <option value="Child">Child (under 12)</option>
+      </select></label>
+      <div class="lab">Dietary needs <span class="hint">(tick any)</span></div>
+      <div class="checks p-diet"></div>
+      <label>Other dietary needs or allergies <input type="text" class="p-diet-other" autocomplete="off"></label>
+      <div class="covered-only p-dates-wrap">
+        <p style="margin:14px 0 0"><button type="button" class="link-btn p-dates-toggle">Different travel dates from the above?</button></p>
+        <div class="row2 p-dates hidden">
+          <div><label>Arrival <input type="date" class="p-arr" min="2027-09-10" max="2027-10-10"></label></div>
+          <div><label>Departure <input type="date" class="p-dep" min="2027-09-10" max="2027-10-15"></label></div>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</template>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ------------------------------------------------------------------ CONFIG
+     ENDPOINT: paste the Google Apps Script web app URL here (see README).
+     Leave it empty to preview the form in demo mode (nothing is sent). */
+  var CONFIG = {
+    ENDPOINT: 'https://script.google.com/macros/s/AKfycbwthyP2xF6XJnGgHFZdbXpTsz8L4PZnsihcgpTSLBxUJs_Rs-jLBl-XK-83_lpvMHrV/exec',
+    MAX_PEOPLE: 10,
+    DIET: ['Vegetarian', 'Vegan', 'Halal', 'No pork', 'No beef', 'Gluten-free', 'Dairy-free', 'Nut allergy', 'Shellfish allergy']
+  };
+  /* ---------------------------------------------------------------------- */
+
+  var params = new URLSearchParams(location.search);
+  var GROUP = params.get('g') === 'covered' ? 'covered' : 'standard';
+  document.body.setAttribute('data-group', GROUP);
+  var COVERED = GROUP === 'covered';
+
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var form = $('#rsvp-form'), peopleEl = $('#people'), tpl = $('#person-tpl');
+  var errorsEl = $('#errors'), submitBtn = $('#submit'), thanksEl = $('#thanks');
+  var uid = 0;
+
+  function renumber() {
+    var cards = peopleEl.querySelectorAll('.person');
+    cards.forEach(function (c, i) {
+      $('.num', c).textContent = i + 1;
+      $('.remove', c).classList.toggle('hidden', cards.length === 1);
+    });
+    $('#add-person').classList.toggle('hidden', cards.length >= CONFIG.MAX_PEOPLE);
+  }
+
+  function addPerson(prefill) {
+    var node = tpl.content.firstElementChild.cloneNode(true);
+    var id = ++uid;
+    var yes = $('.p-yes', node), no = $('.p-no', node);
+    yes.name = no.name = 'att' + id;
+
+    var diet = $('.p-diet', node);
+    CONFIG.DIET.forEach(function (d) {
+      var l = document.createElement('label');
+      var cb = document.createElement('input');
+      cb.type = 'checkbox'; cb.value = d;
+      l.appendChild(cb); l.appendChild(document.createTextNode(' ' + d));
+      diet.appendChild(l);
+    });
+
+    function sync() { $('.if-yes', node).classList.toggle('hidden', !yes.checked); }
+    yes.addEventListener('change', sync);
+    no.addEventListener('change', sync);
+
+    $('.remove', node).addEventListener('click', function () { node.remove(); renumber(); });
+
+    var nameInput = $('.p-name', node);
+    nameInput.addEventListener('input', function () { nameInput.dataset.touched = '1'; });
+    if (prefill) nameInput.value = prefill;
+
+    $('.p-dates-toggle', node).addEventListener('click', function () {
+      $('.p-dates', node).classList.toggle('hidden');
+    });
+
+    peopleEl.appendChild(node);
+    renumber();
+    return node;
+  }
+
+  // first guest card; mirror the contact name into it until the user edits it
+  var first = addPerson();
+  $('#contactName').addEventListener('input', function (e) {
+    var n = $('.p-name', first);
+    if (!n.dataset.touched) n.value = e.target.value;
+  });
+  $('#add-person').addEventListener('click', function () {
+    var c = addPerson();
+    $('.p-name', c).focus();
+  });
+
+  function showErrors(list) {
+    errorsEl.innerHTML = '<strong>Almost there:</strong><ul>' +
+      list.map(function (m) { return '<li>' + m + '</li>'; }).join('') + '</ul>';
+    errorsEl.classList.add('show');
+    errorsEl.focus();
+    errorsEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+  function clearErrors() { errorsEl.classList.remove('show'); errorsEl.innerHTML = ''; }
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+
+  function collect() {
+    var errs = [];
+    var v = function (id) { return form.elements[id] ? form.elements[id].value.trim() : ''; };
+    var data = {
+      website: v('website'),
+      group: GROUP,
+      contactName: v('contactName'),
+      email: v('email'),
+      phone: v('phone'),
+      message: v('message'),
+      arrival: COVERED ? v('arrival') : '',
+      departure: COVERED ? v('departure') : '',
+      flight: COVERED ? v('flight') : '',
+      rooms: COVERED ? v('rooms') : '',
+      people: []
+    };
+
+    if (!data.contactName) errs.push('Please add your name.');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) errs.push('Please add a valid email address.');
+
+    var anyYes = false;
+    peopleEl.querySelectorAll('.person').forEach(function (card, i) {
+      var label = 'Guest ' + (i + 1);
+      var name = $('.p-name', card).value.trim();
+      var yes = $('.p-yes', card).checked, no = $('.p-no', card).checked;
+      if (!name) errs.push(label + ': please add a name.');
+      if (!yes && !no) errs.push((name || label) + ': please tell us if they can make it.');
+      var p = { name: name, attending: yes ? 'Yes' : (no ? 'No' : ''), age: '', diet: [], dietOther: '', arrival: '', departure: '' };
+      if (yes) {
+        anyYes = true;
+        p.age = $('.p-age', card).value;
+        card.querySelectorAll('.p-diet input:checked').forEach(function (cb) { p.diet.push(cb.value); });
+        p.dietOther = $('.p-diet-other', card).value.trim();
+        if (COVERED && !$('.p-dates', card).classList.contains('hidden')) {
+          p.arrival = $('.p-arr', card).value; p.departure = $('.p-dep', card).value;
+          if (!p.arrival || !p.departure) errs.push((name || label) + ': please add both travel dates, or hide the extra dates.');
+          else if (p.departure < p.arrival) errs.push((name || label) + ': departure is before arrival.');
+        }
+      }
+      data.people.push(p);
+    });
+
+    if (COVERED && anyYes) {
+      if (!data.arrival || !data.departure) errs.push('Please add your arrival and departure dates so we can book your room.');
+      else if (data.departure < data.arrival) errs.push('Your departure date is before your arrival date.');
+    }
+    return { data: data, errors: errs };
+  }
+
+  function showThanks(data, demo) {
+    var coming = data.people.filter(function (p) { return p.attending === 'Yes'; });
+    var html;
+    if (coming.length) {
+      html = '<h3>Thank you, see you in Samui!</h3>' +
+        '<p>We have ' + coming.length + (coming.length === 1 ? ' person' : ' people') + ' down as coming: ' +
+        esc(coming.map(function (p) { return p.name; }).join(', ')) + '.</p>' +
+        '<p class="note">To change anything, just fill in the form again with the same email address.</p>';
+    } else {
+      html = '<h3>Thank you for letting us know</h3><p>We\'ll miss you and we\'ll raise a glass.</p>' +
+        '<p class="note">If plans change, fill in the form again with the same email address.</p>';
+    }
+    if (demo) html += '<span class="demo">Preview mode: nothing was sent</span>';
+    thanksEl.innerHTML = html;
+    form.classList.add('hidden');
+    thanksEl.classList.remove('hidden');
+    thanksEl.focus();
+    thanksEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  form.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    clearErrors();
+    var res = collect();
+    if (res.errors.length) { showErrors(res.errors); return; }
+    var data = res.data;
+    if (data.website) { showThanks(data, false); return; }   // honeypot: pretend success
+
+    submitBtn.disabled = true;
+    var oldLabel = submitBtn.textContent;
+    submitBtn.textContent = 'Sending…';
+
+    if (!CONFIG.ENDPOINT) {                                     // demo mode
+      console.log('RSVP payload (demo, not sent):', JSON.stringify(data, null, 2));
+      setTimeout(function () { submitBtn.disabled = false; submitBtn.textContent = oldLabel; showThanks(data, true); }, 500);
+      return;
+    }
+
+    fetch(CONFIG.ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },  // plain text avoids a CORS preflight on Apps Script
+      body: JSON.stringify(data)
+    }).then(function (r) { return r.json(); })
+      .then(function (r) {
+        if (!r || !r.ok) throw new Error((r && r.error) || 'Unexpected response');
+        showThanks(data, false);
+      })
+      .catch(function (err) {
+        console.error(err);
+        showErrors(['Sorry, that didn\'t go through. Please try again in a moment, or message us directly. ' +
+                    'Your answers are still here.']);
+      })
+      .then(function () { submitBtn.disabled = false; submitBtn.textContent = oldLabel; });
+  });
+})();
+</script>
+</body>
+</html>
